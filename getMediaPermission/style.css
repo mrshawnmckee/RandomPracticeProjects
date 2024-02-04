@@ -27,11 +27,11 @@ body {
     align-items: center;
 }
 
-#getLocation:hover {
-    background-color: gray;
+#startStream:hover {
+    background-color: green;
     /* transform: scale(1.10); */
 }
 
-#getLocation:active {
+#startStream:active {
     transform: scale(0.98);
   }

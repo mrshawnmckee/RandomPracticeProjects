@@ -11,4 +11,7 @@ document.querySelector("#startStream").addEventListener("click", async () => {
     }
 })
 
+
+
 // {audio: true} for microphone permissions
+//To choose which camera/microphone instructions here: https://www.udemy.com/course/pro-javascript/learn/lecture/40763074#overview
