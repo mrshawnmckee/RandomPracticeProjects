@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Where am I?</title>
+    <title>Gain Media Access</title>
 </head>
 <body>
     <div class="container">
-        <button id="getLocation">Where Am I?</button>
-        <div id="locationDisplay">
-            Just click the button to find out
-        </div>
+        <button id="startStream">Start Streaming</button>
+        <video id="videoElement" width="640" height="480" autoplay></video>
+        <div id="errorText"></div>
     </div>
     <script src="script.js"></script>
 </body>
