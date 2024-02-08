@@ -19,3 +19,7 @@ function swap(arr, idx1, idx2) {
 const newSwap = (arr, idx1, idx2) => {
     [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
 }
+
+// ^ means anything that is not the following, g is for global, then , '' means replace with nothing
+// To remove nonalphanumeric: .replace(/[^a-z0-9/g, '') More example of this in th
+// JS directory

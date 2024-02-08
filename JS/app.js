@@ -81,3 +81,65 @@ function titleCase(str){
     let newSentence = caps.join(' ')
     console.log(newSentence)
 }
+
+// Reverse a string
+function reverseString(str){
+    let newString = '';
+    for (let i = 0; i < str.length; i++){
+        newString = str[i] + newString
+    }
+    console.log(newString)
+}
+
+// Or do it with reversed str:
+function reverseStringTwo(str){
+    let reversed = '';
+    for(let i = str.length -1; i >= 0; i--){
+        reversed += str[i]
+    }
+    console.log(reversed)
+}
+
+// To do it another way: 
+// Turn into an array(with split), then reverse the array(.reverse), then join back together
+function reverseStringEasy(str){
+    return str.split('').reverse().join('')
+}
+
+// Palindrome (with stripped out non alphanumeric characters)
+// ^ means anything that is not the following, g is for global, then , '' means replace with nothing
+// To remove nonalphanumeric: .replace(/[^a-z0-9/g, '')
+function isPalindrome(str) {
+    const formattedString = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const reversed = formattedString.split('').reverse().join('')
+    for(let i = 0; i < str.length; i++){
+        if(formattedString[i] === reversed[i]){
+            console.log(`${formattedString} is a palindrome`)
+
+        } else {
+         console.log(`${str} is not a palindrome`)
+        }
+    }
+}
+
+
+
+// Count Vowels
+
+function countVowels(str){
+    let count = 0;
+    const newStr = str.toLowerCase()
+    for(let i = 0; i < newStr.length; i++){
+        const char = newStr[i]
+        if(
+            char === 'a' || 
+            char === 'e' || 
+            char === 'i' || 
+            char === 'o' || 
+            char === 'u'
+            ) {
+            count ++;
+        }
+    }
+    console.log(`There are ${count} vowels in the string`)
+}
