@@ -143,3 +143,19 @@ function countVowels(str){
     }
     console.log(`There are ${count} vowels in the string`)
 }
+
+// Remove Dupllicates
+function removeDuplicates(arr) {
+    const uniqueArray = [];
+    for (let i = 0; i < arr.length; i++){
+        if(!uniqueArray.includes(arr[i])){
+            uniqueArray.push(arr[i]);
+        }
+    }
+    console.log(uniqueArray)
+}
+
+// Easy way: Beacuse sets cannot include duplicates: 
+function removeDupesEasy(arr){
+    return Array.from(new Set(arr));
+}
